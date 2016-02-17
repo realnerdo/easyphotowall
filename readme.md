@@ -1,16 +1,16 @@
 # Easy PhotoWall
 
-This is a javascript plugin for creating Slide Photoshows with effects
+This is a javascript plugin for creating Slide Photoshows with effects.
 
 ## Installation
 
-Include the css:
+Include the css file:
 ```html
 <!-- Path to the easyphotowall.css or easyphotowall.min.css -->
 <link rel="stylesheet" href="dist/css/easyphotowall.min.css">
 ```
 
-Include the javascript before closing body tag:
+Include the javascript file before closing body tag:
 ```html
 <!-- Path to the easyphotowall.js or easyphotowall.min.js -->
 <script type="text/javascript" src="dist/js/easyphotowall.min.js"></script>
@@ -39,7 +39,7 @@ photowall.play()
 ## Options
 
 | Option    | Type             | Default     |
-| ----------|:----------------:| -----------:|
+| ----------|------------------| ------------|
 | container | string           | 'photowall' |
 | data      | javascript array |   null      |
 
@@ -84,8 +84,9 @@ photowall.play();
 - [ ] Add more effects
 - [ ] Add duration option
 - [ ] Add play and pause buttons
+- [ ] Add custom size
 
-## How can you contribute
+## How you can contribute
 
 You can drop me any request, suggestion or comment at my [twitter](https://twitter.com/asaelx).
 
@@ -95,4 +96,5 @@ Thanks for reading.
 ## Author
 
 Asael Jaimes
-(http://realnerdo.com/)[http://realnerdo.com/]
+
+[http://realnerdo.com/](http://realnerdo.com/)
