@@ -347,19 +347,21 @@
             }
         }
 
-         /**
-          * Set data
-          */
-         if(typeof this.options.data == 'undefined'){
-             var images_array = [],
-                 list = container.getElementsByTagName('ul')[0],
-                 items = list.getElementsByTagName('li');
+        /**
+         * Set data
+         */
+        if(typeof this.options.data == 'undefined'){
+            var images_array = [],
+                list = container.getElementsByTagName('ul')[0],
+                items = list.getElementsByTagName('li');
             for (var i = 0; i < items.length; i++) {
                 images_array.push(items[i].getElementsByTagName('img')[0].src);
             }
-         }else{
-             var images_array = jsonToArray(this.options.data);
-         }
+        } else if(this.options.data.constructor === Array) {
+            var images_array = this.options.data;
+        }else {
+            var images_array = jsonToArray(this.options.data);
+        }
 
          /**
           * Set variables
@@ -368,9 +370,6 @@
              container = document.getElementById(this.options.container),
              slides    = buildSlides(images),
              count     = slides.length;
-
-        console.log(images);
-        console.log(slides);
 
         /**
          * Run infinite photoshow
