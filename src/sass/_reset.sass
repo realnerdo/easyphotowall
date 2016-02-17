@@ -1,0 +1,73 @@
+/* Reset */
+*, *:before, *:after
+    margin: 0
+    padding: 0
+    outline: 0
+    box-sizing: border-box
+
+html,
+body
+    height: 100%
+    position: relative
+    width: 100%
+
+img
+    vertical-align: bottom
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var
+    font:
+        style: normal
+        weight: normal
+
+ol, ul
+    list-style: none
+
+h1, h2, h3, h4, h5, h6
+    font:
+        size: 100%
+        weight: normal
+
+input, textarea, select
+    font:
+        family: inherit
+        size: inherit
+        weight: inherit
+
+input, textarea, select
+    font-size: 100%
+
+/* Reset HTML5 Search Input in Webkit */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration
+    -webkit-appearance: none
+
+input[type=search]
+    -webkit-appearance: textfield
+    -webkit-box-sizing: content-box
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section
+    display: block
+
+table
+    border:
+        collapse: collapse
+        spacing: 0
+
+a
+    text-decoration: none
+    background-color: transparent
+    &:active, &:hover
+        outline: 0
+    &:hover
+        cursor: pointer

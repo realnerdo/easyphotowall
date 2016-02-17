@@ -1,0 +1,29 @@
+&.easyphotowall__slide--four
+    .easyphotowall__slide__photos
+        &:nth-child(1)
+            .easyphotowall__slide__photos__panel
+                height: 100%
+        .easyphotowall__slide__photos__panel
+            height: 50%
+            .easyphotowall__slide__photos__panel__photo
+                border: 0.6em solid black
+            &:nth-child(1)
+                .easyphotowall__slide__photos__panel__photo
+                    animation: easyphotowall-right-in 6s forwards ease
+                    border-right-width: 0.3em
+        &:nth-child(2)
+            .easyphotowall__slide__photos__panel
+                &:nth-child(1)
+                    .easyphotowall__slide__photos__panel__photo
+                        animation: easyphotowall-left-in 6s forwards ease
+                        border-bottom-width: 0.4em
+                &:nth-child(2)
+                    .easyphotowall__slide__photos__panel__photo
+                        animation: easyphotowall-up-in 6s forwards ease
+                        border-top-width: 0.3em
+                        border-right-width: 0.3em
+                &:nth-child(3)
+                    .easyphotowall__slide__photos__panel__photo
+                        animation: easyphotowall-down-in 6s forwards ease
+                        border-top-width: 0.3em
+                        border-left-width: 0.3em

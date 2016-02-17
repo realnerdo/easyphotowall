@@ -1,0 +1,13 @@
+=font-size($size)
+    font-size: $size
+    font-size: rem($size)
+
+=opacity($opacity)
+    opacity: $opacity
+    $opacity-ie: $opacity * 100
+    filter: alpha(opacity=$opacity-ie)
+
+=clear
+    content: " "
+    display: table
+    clear: both

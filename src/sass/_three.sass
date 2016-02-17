@@ -1,0 +1,23 @@
+&.easyphotowall__slide--three
+    .easyphotowall__slide__photos
+        &:nth-child(1)
+            .easyphotowall__slide__photos__panel
+                height: 100%
+                border: 0.6em solid black
+                .easyphotowall__slide__photos__panel__photo
+                    animation: easyphotowall-right-in 6s forwards ease
+        &:nth-child(2)
+            .easyphotowall__slide__photos__panel:nth-child(1)
+                height: 50%
+                border: 0.6em solid black
+                border-left-width: 0
+                border-bottom-width: 0.3em
+                .easyphotowall__slide__photos__panel__photo
+                    animation: easyphotowall-left-in 6s forwards ease
+            .easyphotowall__slide__photos__panel:nth-child(2)
+                height: 50%
+                border: 0.6em solid black
+                border-left-width: 0
+                border-top-width: 0.3em
+                .easyphotowall__slide__photos__panel__photo
+                    animation: easyphotowall-up-in 6s forwards ease

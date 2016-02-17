@@ -1,0 +1,42 @@
+$columns: 6
+$gutter: 0
+$max-width: 1000px
+
+=breakpoint($size)
+    @media only screen and ($size)
+        @content
+
+*, *:after, *:before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+// img
+//     // height: auto!important
+//     // max-width: 100%
+//     width: auto
+
+.easyphotowall_grid_wrapper
+    margin: 0 auto
+    width: 100%
+
+.easyphotowall_grid_wrapper:after,
+.easyphotowall_grid_row:after
+    content: " "
+    display: table
+    clear: both
+
+[class*='easyphotowall_grid_col-']
+    float: left
+    min-height: 1px
+    padding: $gutter
+    width: 100%
+
++breakpoint("min-width: 20em")
+    .easyphotowall_grid_wrapper
+        width: 100%
+        max-width: $max-width
+
+    @for $i from 1 through $columns
+        .easyphotowall_grid_col-#{$i}
+            width: 100% / $columns * $i

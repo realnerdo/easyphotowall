@@ -1,0 +1,38 @@
+{
+  "name": "easyphotowall",
+  "version": "1.0.0",
+  "description": "Javascript Plugin to create Slide Photoshows with effects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realnerdo/easyphotowall.git"
+  },
+  "keywords": [
+    "javascript",
+    "plugin",
+    "photos",
+    "slideshow",
+    "photoshow"
+  ],
+  "author": "Asael Jaimes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realnerdo/easyphotowall/issues"
+  },
+  "homepage": "https://github.com/realnerdo/easyphotowall#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^1.5.2"
+  }
+}
