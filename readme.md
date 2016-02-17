@@ -1,6 +1,8 @@
 # Easy PhotoWall
 
-This is a javascript plugin for creating Slide Photoshows with effects.
+A javascript plugin for creating Slide Photoshows with effects.
+
+[Demo page](http://realnerdo.github.io/easyphotowall/)
 
 ## Installation
 
