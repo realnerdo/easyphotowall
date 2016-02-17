@@ -10,7 +10,7 @@ var gulp         = require('gulp'),
 
 gulp.task('templates', function() {
     return gulp.src('src/jade/*.jade')
-            .pipe(jade())
+            .pipe(jade({ pretty: true }))
             .pipe(gulp.dest('dist/'))
             .pipe(connect.reload())
             .pipe(notify('Do you even jade, bro?'))
