@@ -177,6 +177,57 @@
                     slide.appendChild(photos_container_two);
 
                     break;
+
+                case 'four':
+
+                    var photos_container_one = document.createElement('div');
+                    photos_container_one.className = photos_class + ' easyphotowall_grid_col-3';
+
+                    var photos_container_two = document.createElement('div');
+                    photos_container_two.className = photos_class + ' easyphotowall_grid_col-3';
+
+                    var panel_container_one = document.createElement('div');
+                    panel_container_one.className = panel_class + ' easyphotowall_grid_col-6';
+
+                    var panel_container_two = document.createElement('div');
+                    panel_container_two.className = panel_class + ' easyphotowall_grid_col-6';
+
+                    var panel_container_three = document.createElement('div');
+                    panel_container_three.className = panel_class + ' easyphotowall_grid_col-3';
+
+                    var panel_container_four = document.createElement('div');
+                    panel_container_four.className = panel_class + ' easyphotowall_grid_col-3';
+
+                    var photo_one = document.createElement('div');
+                    photo_one.className = photo_class;
+                    photo_one.style.backgroundImage = 'url('+ data[0] +')';
+
+                    var photo_two = document.createElement('div');
+                    photo_two.className = photo_class;
+                    photo_two.style.backgroundImage = 'url('+ data[1] +')';
+
+                    var photo_three = document.createElement('div');
+                    photo_three.className = photo_class;
+                    photo_three.style.backgroundImage = 'url('+ data[2] +')';
+
+                    var photo_four = document.createElement('div');
+                    photo_four.className = photo_class;
+                    photo_four.style.backgroundImage = 'url('+ data[3] +')';
+
+                    panel_container_one.appendChild(photo_one);
+                    panel_container_two.appendChild(photo_two);
+                    panel_container_three.appendChild(photo_three);
+                    panel_container_four.appendChild(photo_four);
+
+                    photos_container_one.appendChild(panel_container_one);
+                    photos_container_two.appendChild(panel_container_two);
+                    photos_container_two.appendChild(panel_container_three);
+                    photos_container_two.appendChild(panel_container_four);
+
+                    slide.appendChild(photos_container_one);
+                    slide.appendChild(photos_container_two);
+
+                    break;
             }
 
             return slide;
@@ -257,6 +308,9 @@
             el.appendChild(slide);
             container.innerHTML = el.innerHTML;
 
+            var container_class = "easyphotowall";
+            container.className = container_class;
+
             // FullScreen Button
             var fullscreen_button = document.createElement('button');
             fullscreen_button.id = 'fullscreen-button';
@@ -286,7 +340,9 @@
               (function(index) {
                 setTimeout(function(){
                     replaceSlide(slides[index], container);
-                    if(index+1 == slides.length) infinite(slides);
+                    setTimeout(function(){
+                        if(index+1 === slides.length) infinite(slides);
+                    }, 6000)
                 }, 6000*i)})(i);
             }
         }
@@ -308,10 +364,13 @@
          /**
           * Set variables
           */
-         var images = randomChunkSplit(images_array, 1, 3),
+         var images = randomChunkSplit(images_array, 1, 4),
              container = document.getElementById(this.options.container),
              slides    = buildSlides(images),
              count     = slides.length;
+
+        console.log(images);
+        console.log(slides);
 
         /**
          * Run infinite photoshow

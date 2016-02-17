@@ -5,11 +5,14 @@ $max-width: 1000px
 =breakpoint($size)
     @media only screen and ($size)
         @content
-
-*, *:after, *:before
+.easyphotowall
     margin: 0
     padding: 0
     box-sizing: border-box
+    *, *:after, *:before
+        margin: 0
+        padding: 0
+        box-sizing: border-box
 
 // img
 //     // height: auto!important
