@@ -73,16 +73,16 @@
                 case 'one':
 
                     var photos_container_one = document.createElement('div');
-                    photos_container_one.className = photos_class + ' easyphotowall_grid_col-3';
+                    photos_container_one.className = photos_class + ' easyphotowall_grid_colsize_3';
 
                     var photos_container_two = document.createElement('div');
-                    photos_container_two.className = photos_class + ' easyphotowall_grid_col-3';
+                    photos_container_two.className = photos_class + ' easyphotowall_grid_colsize_3';
 
                     var panel_container_one = document.createElement('div');
-                    panel_container_one.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_one.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_two = document.createElement('div');
-                    panel_container_two.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_two.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var photo_one = document.createElement('div');
                     photo_one.className = photo_class;
@@ -106,16 +106,16 @@
                 case 'two':
 
                     var photos_container_one = document.createElement('div');
-                    photos_container_one.className = photos_class + ' easyphotowall_grid_col-2';
+                    photos_container_one.className = photos_class + ' easyphotowall_grid_colsize_2';
 
                     var photos_container_two = document.createElement('div');
-                    photos_container_two.className = photos_class + ' easyphotowall_grid_col-4';
+                    photos_container_two.className = photos_class + ' easyphotowall_grid_colsize_4';
 
                     var panel_container_one = document.createElement('div');
-                    panel_container_one.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_one.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_two = document.createElement('div');
-                    panel_container_two.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_two.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var photo_one = document.createElement('div');
                     photo_one.className = photo_class;
@@ -139,19 +139,19 @@
                 case 'three':
 
                     var photos_container_one = document.createElement('div');
-                    photos_container_one.className = photos_class + ' easyphotowall_grid_col-4';
+                    photos_container_one.className = photos_class + ' easyphotowall_grid_colsize_4';
 
                     var photos_container_two = document.createElement('div');
-                    photos_container_two.className = photos_class + ' easyphotowall_grid_col-2';
+                    photos_container_two.className = photos_class + ' easyphotowall_grid_colsize_2';
 
                     var panel_container_one = document.createElement('div');
-                    panel_container_one.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_one.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_two = document.createElement('div');
-                    panel_container_two.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_two.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_three = document.createElement('div');
-                    panel_container_three.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_three.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var photo_one = document.createElement('div');
                     photo_one.className = photo_class;
@@ -181,22 +181,22 @@
                 case 'four':
 
                     var photos_container_one = document.createElement('div');
-                    photos_container_one.className = photos_class + ' easyphotowall_grid_col-3';
+                    photos_container_one.className = photos_class + ' easyphotowall_grid_colsize_3';
 
                     var photos_container_two = document.createElement('div');
-                    photos_container_two.className = photos_class + ' easyphotowall_grid_col-3';
+                    photos_container_two.className = photos_class + ' easyphotowall_grid_colsize_3';
 
                     var panel_container_one = document.createElement('div');
-                    panel_container_one.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_one.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_two = document.createElement('div');
-                    panel_container_two.className = panel_class + ' easyphotowall_grid_col-6';
+                    panel_container_two.className = panel_class + ' easyphotowall_grid_colsize_6';
 
                     var panel_container_three = document.createElement('div');
-                    panel_container_three.className = panel_class + ' easyphotowall_grid_col-3';
+                    panel_container_three.className = panel_class + ' easyphotowall_grid_colsize_3';
 
                     var panel_container_four = document.createElement('div');
-                    panel_container_four.className = panel_class + ' easyphotowall_grid_col-3';
+                    panel_container_four.className = panel_class + ' easyphotowall_grid_colsize_3';
 
                     var photo_one = document.createElement('div');
                     photo_one.className = photo_class;

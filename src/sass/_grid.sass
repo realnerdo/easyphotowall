@@ -5,6 +5,7 @@ $max-width: 1000px
 =breakpoint($size)
     @media only screen and ($size)
         @content
+
 .easyphotowall
     margin: 0
     padding: 0
@@ -13,11 +14,6 @@ $max-width: 1000px
         margin: 0
         padding: 0
         box-sizing: border-box
-
-// img
-//     // height: auto!important
-//     // max-width: 100%
-//     width: auto
 
 .easyphotowall_grid_wrapper
     margin: 0 auto
@@ -29,7 +25,7 @@ $max-width: 1000px
     display: table
     clear: both
 
-[class*='easyphotowall_grid_col-']
+[class*='easyphotowall_grid_colsize_']
     float: left
     min-height: 1px
     padding: $gutter
@@ -41,5 +37,5 @@ $max-width: 1000px
         max-width: $max-width
 
     @for $i from 1 through $columns
-        .easyphotowall_grid_col-#{$i}
+        .easyphotowall_grid_colsize_#{$i}
             width: 100% / $columns * $i
