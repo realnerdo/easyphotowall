@@ -2,7 +2,7 @@
   "name": "easyphotowall",
   "version": "1.0.0",
   "description": "Javascript Plugin to create Slide Photoshows with effects",
-  "main": "index.js",
+  "main": "dist/js/easyphotowall.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
