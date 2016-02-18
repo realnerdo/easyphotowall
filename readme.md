@@ -1,3 +1,4 @@
+
 # Easy PhotoWall
 
 A javascript plugin for creating Slide Photoshows with effects.
@@ -5,6 +6,21 @@ A javascript plugin for creating Slide Photoshows with effects.
 [Demo page](http://realnerdo.github.io/easyphotowall/)
 
 ## Installation
+
+You can use bower:
+
+```bash
+bower install easyphotowall
+```
+
+...or you can use npm:
+```bash
+npm install easyphotowall
+```
+
+## Manual installation
+
+If you prefer, you can just include the files manually.
 
 Include the css file:
 ```html
@@ -22,7 +38,7 @@ Create a placeholder tag wherever you want the photowall:
 ```html
 <!-- By default the plugin searches for a div with the id of 'photowall' -->
 <!-- You can set your custom id in the plugin options -->
-<div id="photowall">
+<div id="easyphotowall">
     <!-- You can set your images in a unordered list -->
     <ul>
         <li><img src="path/to/image_1.jpg" alt="Image 1"></li>
@@ -40,10 +56,10 @@ photowall.play()
 
 ## Options
 
-| Option    | Type             | Default     |
-| ----------|------------------| ------------|
-| container | string           | 'photowall' |
-| data      | javascript array |   null      |
+| Option    | Type             | Default         |
+| ----------|------------------| ----------------|
+| container | string           | 'easyphotowall' |
+| data      | javascript array |   null          |
 
 ## Usage
 
