@@ -1,6 +1,6 @@
 {
   "name": "easyphotowall",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Javascript Plugin to create Slide Photoshows with effects",
   "main": "dist/js/easyphotowall.js",
   "scripts": {
