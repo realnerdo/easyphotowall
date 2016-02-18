@@ -1,0 +1,25 @@
+{
+  "name": "easyphotowall",
+  "description": "Javascript Plugin to create Slide Photoshows with effects",
+  "main": "dist/js/easyphotowall.js",
+  "authors": [
+    "Asael Jaimes"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "plugin",
+    "photos",
+    "slideshow",
+    "photoshow"
+  ],
+  "homepage": "https://github.com/realnerdo/easyphotowall",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
