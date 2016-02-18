@@ -1,6 +1,6 @@
 (function(){
     // Define constructor
-    this.Photoshow = function() {
+    this.Photowall = function() {
 
         // Set defaults
         var defaults = {
@@ -29,11 +29,11 @@
 
     // Public Methods
 
-    Photoshow.prototype.play = function() {
+    Photowall.prototype.play = function() {
         buildOut.call(this);
     }
 
-    Photoshow.prototype.fullScreen = function() {
+    Photowall.prototype.fullScreen = function() {
         fullScreen.call(this);
     }
 
