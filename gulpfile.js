@@ -28,6 +28,15 @@ gulp.task('styles', function() {
             .pipe(notify('Looking good!'))
 });
 
+gulp.task('demo_styles', function() {
+    return gulp.src('src/sass/demo.sass')
+            .pipe(sass().on('error', sass.logError))
+            .pipe(autoprefixer())
+            .pipe(gulp.dest('dist/css'))
+            .pipe(connect.reload())
+            .pipe(notify('Looking good!'))
+});
+
 gulp.task('scripts', function() {
     return gulp.src(['src/js/easyphotowall.js'])
             .pipe(concat('easyphotowall.js'))
@@ -49,6 +58,7 @@ gulp.task('connect', function() {
 gulp.task('watch', function() {
     gulp.watch('src/jade/*.jade', ['templates']);
     gulp.watch('src/sass/*.sass', ['styles']);
+    gulp.watch('src/sass/demo.sass', ['demo_styles']);
     gulp.watch('src/js/*.js', ['scripts']);
 });
 
